@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dispatch</title>
+    <!----Bootstrap and Jquery-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+     <!---------Icon-------->
+     <link rel="icon" type="image/jpg" href="assests/images/Dispatch-circle.png">
+     <!--Google font-->
+     <link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
+    <!-----FontAwesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+   <!----------Stylesheets-->
+   <link href="assests/css/dispatch.css" rel="stylesheet">
+   <link href="assests/css/dispatch.css" rel="stylesheet">
+</head>
+<body>
+    <header >
+        <nav class="navbar navbar-expand-lg navbar-dark default-color bg-dark fixed-top">
+           
+            <a class="navbar-brand" href="#">
+              <img src="assests/images/dispatch.png" class="logo" alt="Logo" style="width:30px;">
+                Dispatch Center 
+            </a>                
+          <!-- Toggler/collapsibe Button -->
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar1">
+                   <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="Navbar1">
+               <ul class="navbar-nav ml-auto">
+                 <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                         Driver
+                    </a>
+                    <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Add Driver</a>
+                    <a class="dropdown-item" href="#">Driver Info</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                         Company
+                    </a>
+                    <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Add Company</a>
+                    <a class="dropdown-item" href="#">Company Info</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                         Reports
+                    </a>
+                    <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Driver</a>
+                    <a class="dropdown-item" href="#">Company</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sign Off</a>
+                  </li>
+            </ul>
+            </div>
+        </nav> 
+    </header> 
+
+    <section class="container" id="getLoad">
+        <div class="jumbotron ">
+          <h1 >Book a Load</h1>
+      </div>
+      <table class="table table-hover table-sm">
+        
+        <thead>
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Pickup</th>
+            <th scope="col">Delivery</th>
+            <th scope="col">Driver</th>
+            <th scope="col">Company</th>
+            <th scope="col">Rate</th>
+          </tr>
+        </thead>
+        
+      </table>
+      </section>
+      <section class="container" id="addT">
+        <h4>Add Load</h4>
+        
+        <form class="form-inline">
+          <div class="form-group">
+            <label for="date">Date</label>
+            <input type="text" class="form-control" id="tdate" >
+          </div>
+          <div class="form-group">
+            <label for="pickup">Pickup</label>
+            <input type="text" class="form-control" id="tpickup">
+          </div>
+          <div class="form-group">
+              <label for="delivery">Delivery </label>
+              <input type="text" class="form-control" id="tdelivery">
+            </div>
+            <div class="form-group">
+              <label for="driver">Driver</label>
+              <input type="text" class="form-control" id="tdriver">
+            </div>
+            <div class="form-group">
+                <label for="company">Company</label>
+                <input type="text" class="form-control" id="tcompany">
+              </div>
+            
+          <button type="submit" class="btn " id="book">Book                 
+          </button>
+        </form>
+      
+      </section>
+</body>
+</html>
